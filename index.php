@@ -14,8 +14,8 @@ class Movie {
         $this->year = $year;
     }
 
-    public function setDescription(string $description) {
-        $this->description = $description;
+    public function setYear(string $year) {
+        $this->year = $year;
     }
 }
 
@@ -33,6 +33,9 @@ $secondmovie = new Movie('The Butterfly Effect', 'Eric Bress, J.- Mackye Gruber'
 </head>
 <body>
     <?php 
+        var_dump($firstmovie);
+        var_dump($secondmovie);
+        $firstmovie->setYear(2007);
         var_dump($firstmovie);
     ?>
 </body>
